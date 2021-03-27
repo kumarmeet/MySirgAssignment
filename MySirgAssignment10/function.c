@@ -1,3 +1,14 @@
+int sum_of_digits(int n)
+{
+  int sum = 0;
+
+  if(n == 1)
+    return 1;
+
+  sum = n % 10 + sum_of_digits(n / 10);
+  return sum;
+}
+
 int sum_of_square_natural_number(int n)
 {
     int sum = 0;
