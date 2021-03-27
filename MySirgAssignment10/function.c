@@ -1,3 +1,11 @@
+int decimal_to_binary(int n)
+{
+    if(n == 0)
+        return 0;
+    else
+        return (n % 2 + 10 * decimal_to_binary(n / 2));
+}
+
 int sum_of_digits(int n)
 {
   int sum = 0;
